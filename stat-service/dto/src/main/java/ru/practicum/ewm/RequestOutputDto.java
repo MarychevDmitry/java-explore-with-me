@@ -7,7 +7,7 @@ import lombok.ToString;
 @Builder
 @Getter
 @ToString
-public class ViewStats {
+public class RequestOutputDto {
     private String app;
     private String uri;
     private int hits;

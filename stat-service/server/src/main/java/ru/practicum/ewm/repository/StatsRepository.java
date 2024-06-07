@@ -1,15 +1,15 @@
 package ru.practicum.ewm.repository;
 
-import ru.practicum.ewm.EndpointHit;
-import ru.practicum.ewm.ViewStats;
+import ru.practicum.ewm.RequestDto;
+import ru.practicum.ewm.RequestOutputDto;
 import ru.practicum.ewm.ViewsStatsRequest;
 
 import java.util.List;
 
 public interface StatsRepository {
-    void saveHit(EndpointHit hit);
+    void saveHit(RequestDto hit);
 
-    List<ViewStats> getStats(ViewsStatsRequest request);
+    List<RequestOutputDto> getStats(ViewsStatsRequest request);
 
-    List<ViewStats> getUniqueStats(ViewsStatsRequest request);
+    List<RequestOutputDto> getUniqueStats(ViewsStatsRequest request);
 }
